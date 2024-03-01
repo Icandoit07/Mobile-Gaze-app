@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="RtlHardcoded"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+  <com.mobed.mlkit.vision.datacollector.CameraSourcePreview
+      android:id="@+id/preview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true">
+
+    <com.mobed.mlkit.vision.datacollector.GraphicOverlay
+        android:id="@+id/graphic_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+
+  </com.mobed.mlkit.vision.datacollector.CameraSourcePreview>
+
+  <TextView
+      android:id="@+id/textview"
+      android:textColor="#FFFFFF"
+      android:text="@string/count"
+      android:textSize="20sp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:layout_width="150dp"
+      android:layout_height="30dp"/>
+  <TextView
+      android:id="@+id/textview2"
+      android:textColor="#FFFFFF"
+      android:text="@string/fps"
+      android:textSize="20sp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:layout_width="250dp"
+      android:layout_height="30dp"/>
+  <Button
+      android:id="@+id/MyButton"
+      android:background="@android:color/holo_blue_dark"
+      android:layout_marginLeft="53px"
+      android:layout_marginTop="100px"
+      android:layout_width="224px"
+      android:layout_height="224px"
+      android:clickable = "true"/>
+
+</RelativeLayout>
