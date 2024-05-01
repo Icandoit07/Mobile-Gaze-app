@@ -55,6 +55,8 @@ public class BitmapUtils {
         data.rewind();
         byte[] imageInBuffer = new byte[data.limit()];
         data.get(imageInBuffer, 0, imageInBuffer.length);
+
+        
         try {
             YuvImage image =
                     new YuvImage(
